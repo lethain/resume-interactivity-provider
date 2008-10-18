@@ -5,7 +5,6 @@ $(document).ready(function() {
     }
     var select_skill = function(name) {
       var id = name.replace(/[ .!]+/g,"");
-      window.console.log(id);
       $("#"+id).addClass("selected");
     }
     var select_skills_for_experience = function(exp) {
