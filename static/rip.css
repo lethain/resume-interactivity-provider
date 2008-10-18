@@ -1,0 +1,91 @@
+body {
+    background-color: #121212;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #9955FF;
+    font-family: georgia;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+}
+
+#top {
+    overflow: auto;
+}
+
+#top a {
+    color: #BB88FF;
+}
+
+#name {
+    width: 450px;
+    margin-right: 25px;
+    float: left;   
+}
+
+#name h1 {
+    font-size: 2.5em;
+}
+
+#contact {
+    width: 200px;
+    margin-left: 25px;
+    float: left;
+}
+#address {
+    width: 200px;
+    margin-left: 25px;
+    float: left;
+    
+}
+
+#statement {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#details {
+    overflow: auto;
+}
+
+#details h2.title {
+    border-bottom: 2px solid;
+}
+
+#experiences {
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 450px;
+    margin-right: 25px;
+    float: left;
+    color: #99BB44;
+}
+
+#experiences a {
+    color: #BBDD77;
+}
+
+.experience .dates {
+    float: right;
+}
+
+#skills {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 25px;
+    width: 450px;
+    float: right;
+    color: #770033;
+}
+
+.skill {
+    font-size: 1.25em;
+    margin-right: 0.5em;
+}
