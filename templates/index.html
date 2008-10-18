@@ -32,9 +32,11 @@
     <h2 class="title">Experience</h2>
     {% for experience in experiences %}
     <div class="experience">
-      <span class="dates">{{ experience.start }} - {{ experience.end }}</span>
-      <h3><a href="{{ experience.link }}">{{ experience.title }}</a></h3>
-      <p>{{ experience.description }}</p>
+      <div class="top">
+	<span class="dates">{{ experience.start }} - {{ experience.end }}</span>
+	<h3><a href="{{ experience.link }}">{{ experience.title }}</a></h3>
+      </div>
+      <p class="description hidden">{{ experience.description }}</p>
       {% comment %}
       <p>{{ experience.skills }}</p>
       {% endcomment %}

@@ -7,6 +7,10 @@ body {
     font-family: georgia;
 }
 
+.hidden {
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -72,15 +76,29 @@ a:hover {
     color: #BBDD77;
 }
 
+.experience .top {
+    height: 30px;
+    overflow: auto;
+}
+
 .experience .dates {
     float: right;
+    margin-top: 0px;
+}
+
+.experience h3 {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #experiences .selected {
-    width: 450px;
-    height: 100px;
-    border: 1px solid;
-    background: #525252;
+
+}
+
+.experience p {
+    margin-top: 0;
+    margin-bottom: 0.25em;
 }
 
 #skills {
