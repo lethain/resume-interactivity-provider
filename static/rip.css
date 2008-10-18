@@ -114,3 +114,8 @@ a:hover {
     font-size: 1.25em;
     margin-right: 0.5em;
 }
+
+#skills .selected {
+    font-size: 1.5em;
+    color: #AA3366;
+}
