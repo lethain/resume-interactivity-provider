@@ -1,0 +1,7 @@
+body {
+    background-color: #525252;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

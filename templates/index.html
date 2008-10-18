@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load aym %}
+{% block content %}
+<div id="top">
+  <div id="name">
+    <h2>{{ name }}</h2>
+  </div>
+  <div id="contact">
+    <p id="email">{{ email }}</p>
+    <p id="phone">{{ phone }}</p>
+  </div>
+  <div id="address">
+    <p id="address_one">{{ street }}</p>
+    <p id="address_two">{{ city }}, {{ state }} {{ zip }}</p>
+    <p id="address_three">{{ country }}</p>
+  </div>
+</div>
+<div id="middle">
+  <div id="experiences">
+    {% for experience in experiences %}
+    <div class="experience">
+      <h3>{{ experience.title }}</h3>
+    </div>
+    {% endfor %}
+  </div>
+  <div id="skills">
+    {% for skill in skills %}
+    <span class="skill">{{ skill }}</span>
+    {% endfor %}
+  </div>
+
+</div>
+<div id="bottom">
+  <p> Built using <a href="#">RIP</a> by <a href="http://lethain.com">Will Larson </a></p>
+</div>
+
+{% endblock %}
