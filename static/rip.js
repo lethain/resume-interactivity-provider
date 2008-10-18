@@ -13,10 +13,8 @@ $(document).ready(function() {
       for (var i=0; i<experiences.length; i++) {
 	var obj = experiences[i];
 	if (title == obj.title) {
-	  var skills = obj.skills;
-	  for (var j=0; j<skills.length; j++) {
-	    var skill = skills[j];
-	    select_skill(skill);
+	  for (var j=0; j<obj.skills.length; j++) {
+	    select_skill(obj.skills[j]);
 	  }
 	  break;
 	}
@@ -40,7 +38,8 @@ $(document).ready(function() {
       select_skills_for_experience(this);
     };
     $(".experience").hover(select_experience, function(){});
-    
+ 
+    selected = $(".experience:first")[0];
     var first = $(".experience:first").addClass("selected").children("p").slideDown('slow');
     select_skills_for_experience($(".experience:first")[0]);
     //select_skill("Cappuccino");
