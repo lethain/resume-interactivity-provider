@@ -33,7 +33,7 @@
     {% for experience in experiences %}
     <div id="{{ experience.title|urlencode }}" class="experience">
       <div class="top">
-	<span class="dates">{{ experience.start }} - {{ experience.end }}</span>
+	<span class="dates">{% if experience.start %}{{ experience.start }}{% endif %}{% if experience.end %} - {{ experience.end }}{% endif %}</span>
 	<h3><a href="{{ experience.link }}">{{ experience.title }}</a></h3>
       </div>
       <p class="description hidden">{{ experience.description }}</p>
