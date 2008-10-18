@@ -32,6 +32,10 @@ a:hover {
     margin-right: 25px;
     float: left;   
 }
+#name a {
+    color: #AA3366;
+}
+
 
 #name h1 {
     font-size: 2.5em;
