@@ -16,18 +16,18 @@ $(document).ready(function() {
 	  break;
 	}}};
     var reset_selected_experience = function() {
-      if (selected) $(selected).removeClass("selected").children("p").hide();
+      $(".experience").removeClass("selected").children("p").slideUp('slow');
     };
     var select_experience = function() {
       reset_selected_experience();
       reset_selected_skills();
       selected = this;
-      $(this).addClass("selected").children("p").slideDown('slow',function() {});
+      $(this).addClass("selected").children("p").show();
       select_skills_for_experience(this);
     };
     $(".experience").hover(select_experience, function(){});
     selected = $(".experience:first")[0];
-    var first = $(".experience:first").addClass("selected").children("p").slideDown('slow');
+    var first = $(".experience:first").addClass("selected").children("p").show();
     select_skills_for_experience($(".experience:first")[0]);
   });
 
