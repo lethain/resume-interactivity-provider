@@ -4,14 +4,15 @@ $(document).ready(function() {
       $(".skill").removeClass("selected");
     }
     var select_skill = function(name) {
-      var id = encodeURIComponent(name);
+      var id = name.replace(/[ .!]+/g,"");
+      window.console.log(id);
       $("#"+id).addClass("selected");
     }
     var select_skills_for_experience = function(exp) {
-      var title = decodeURIComponent(exp.id);
+      var title = exp.id.replace(/[ .!]+/g,"");
       for (var i=0; i<experiences.length; i++) {
 	var obj = experiences[i];
-	if (title == obj.title) {
+	if (title == obj.id) {
 	  for (var j=0; j<obj.skills.length; j++) select_skill(obj.skills[j]);
 	  break;
 	}}};

@@ -25,13 +25,13 @@
   <div id="skills">
     <h2 class="title">Skills</h2>
     {% for skill in skills %}
-    <span id="{{ skill|urlencode }}" class="skill">{{ skill }}</span>
+    <span id="{{ skill|clean }}" class="skill">{{ skill }}</span>
     {% endfor %}
   </div>
   <div id="experiences">
     <h2 class="title">Experience</h2>
     {% for experience in experiences %}
-    <div id="{{ experience.title|urlencode }}" class="experience">
+    <div id="{{ experience.id }}" class="experience">
       <div class="top">
 	<span class="dates">{% if experience.start %}{{ experience.start }}{% endif %}{% if experience.end %} - {{ experience.end }}{% endif %}</span>
 	<h3><a href="{{ experience.link }}">{{ experience.title }}</a></h3>

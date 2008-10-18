@@ -1,5 +1,6 @@
 from django import template
 from django.utils import safestring
+import re
 
 try:
     import markdown
@@ -14,6 +15,12 @@ except ImportError:
     print u"Requires Pygments library to use syntax highlighting tags."
 
 register = template.Library()
+
+CHARS_TO_SUB = re.compile(r"[ .!]+")
+
+@register.filter
+def clean(value):
+    return CHARS_TO_SUB.subn(u"",value)[0]
 
 @register.tag(name="markdown")
 def markdownParser(parser, token):
