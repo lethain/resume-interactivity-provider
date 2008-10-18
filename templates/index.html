@@ -3,11 +3,12 @@
 {% block content %}
 <div id="top">
   <div id="name">
-    <h2>{{ name }}</h2>
+    <h1><a href="{{ name_url }}">{{ name }}</a></h1>
   </div>
   <div id="contact">
-    <p id="email">{{ email }}</p>
-    <p id="phone">{{ phone }}</p>
+    <p id="email">email: <a href="mailto:{{ email }}">{{ email }}</a></p>
+    <p id="phone">cell: {{ phone }}</p>
+    <p id="twitter">twitter: <a href="http://twitter.com/{{ twitter|lower }}">{{ twitter }}</a></p>
   </div>
   <div id="address">
     <p id="address_one">{{ street }}</p>
@@ -15,20 +16,31 @@
     <p id="address_three">{{ country }}</p>
   </div>
 </div>
-<div id="middle">
-  <div id="experiences">
-    {% for experience in experiences %}
-    <div class="experience">
-      <h3>{{ experience.title }}</h3>
-    </div>
-    {% endfor %}
-  </div>
+<div id="statement">
+  {% markdown %}
+  {{ statement }}
+  {% endmarkdown %}
+</div>
+<div id="details">
   <div id="skills">
+    <h2 class="title">Skills</h2>
     {% for skill in skills %}
     <span class="skill">{{ skill }}</span>
     {% endfor %}
   </div>
-
+  <div id="experiences">
+    <h2 class="title">Experience</h2>
+    {% for experience in experiences %}
+    <div class="experience">
+      <span class="dates">{{ experience.start }} - {{ experience.end }}</span>
+      <h3><a href="{{ experience.link }}">{{ experience.title }}</a></h3>
+      <p>{{ experience.description }}</p>
+      {% comment %}
+      <p>{{ experience.skills }}</p>
+      {% endcomment %}
+    </div>
+    {% endfor %}
+  </div>
 </div>
 <div id="bottom">
   <p> Built using <a href="#">RIP</a> by <a href="http://lethain.com">Will Larson </a></p>

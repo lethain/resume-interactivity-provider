@@ -2,12 +2,11 @@
 <html>
 <head>
 <title>{% block title %}My CMS{% endblock %}</title>
-<link rel="stylesheet" href="static/style.css">
-<link rel="stylesheet" href="static/pygments.css">
+<link rel="stylesheet" href="static/rip.css">
+<script type="text/javascript" src="static/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="static/rip.js"></script>
 </head>
 <body>
-{% include "header.html" %}
 {% block content %}{% endblock %}
-{% include "footer.html" %}
 </body>
 </html>
