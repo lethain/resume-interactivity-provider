@@ -36,7 +36,7 @@
 	<span class="dates">{% if experience.start %}{{ experience.start }}{% endif %}{% if experience.end %} - {{ experience.end }}{% endif %}</span>
 	<h3><a href="{{ experience.link }}">{{ experience.title }}</a></h3>
       </div>
-      <p class="description hidden">{{ experience.description }}</p>
+      <p class="description hidden">{{ experience.description|safe }}</p>
       {% comment %}
       <p>{{ experience.skills }}</p>
       {% endcomment %}

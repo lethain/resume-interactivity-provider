@@ -12,6 +12,14 @@ EXPERIENCES = (
         "description":"Write about Django, Python and programming topics.",
         },
     {
+        "title":"AYM CMS",
+        "link":"http://aymcms.com/",
+        "start":"September, 2008",
+        "end":"",
+        "description":"Create static websites using Django's flexibility.",
+        "skills":("Python","Django","HTML","CSS"),
+        },
+    {
         "title":"Sparklines.js",
         "link":"http://www.willarson.com/code/sparklines/sparklines.html",
         "start":"June, 2008",
@@ -45,9 +53,10 @@ EXPERIENCES = (
         },
     {
         "title":"Processed Tower Defense",
-        "link":"http://lethain.com/entry/2008/jun/09/processed-tower-defense-1-0/",
+        "link":"http://ptdef.com/about.html",
         "start":"May, 2008",
         "end":"June, 2008",
+        "description":"Created tower defense game with <a href='http://blog.rictic.com/'>Peter Burns</a>.",
         "skills":("JavaScript","Processing.js","HTML","CSS"),
         },
     {
