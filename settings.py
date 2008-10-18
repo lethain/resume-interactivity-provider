@@ -1,59 +1,60 @@
 import os, datetime
+from django.utils import simplejson
 ROOT_PATH = os.path.dirname(__file__)
 
 EXPERIENCES = (
     {
-        'title':'Irrational Exuberance',
-        'link':'http://lethain.com/',
-        'start':'May, 2007',
-        'end':'Present',
-        'skills':('Writing',),
-        'description':'I write about Django, Python and many other things.',
+        "title":"Irrational Exuberance",
+        "link":"http://lethain.com/",
+        "start":"May, 2007",
+        "end":"Present",
+        "skills":("Writing",),
+        "description":"I write about Django, Python and many other things.",
         },
     {
-        'title':'Sparklines.js',
-        'link':'http://lethain.com/',
-        'start':'June 2008',
-        'end':'Present',
-        'description':'A JavaScript library for creating statistically sound cross-browser sparklines.',
-        'skills':('JavaScript','Processing.js'),
+        "title":"Sparklines.js",
+        "link":"http://lethain.com/",
+        "start":"June 2008",
+        "end":"Present",
+        "description":"A JavaScript library for creating statistically sound cross-browser sparklines.",
+        "skills":("JavaScript","Processing.js"),
         },
     {
-        'title':'LifeFlow',
-        'link':'http://lethain.com/',
-        'start':'',
-        'end':'',
-        'skills':('Django','Python','HTML','CSS','JavaScript','jQuery','PostgreSQL','Memcached','Git'),
+        "title":"LifeFlow",
+        "link":"http://lethain.com/",
+        "start":"",
+        "end":"",
+        "skills":("Django","Python","HTML","CSS","JavaScript","jQuery","PostgreSQL","Memcached","Git"),
         },
     {
-        'title':'Japanese Exchange and Teaching Program',
-        'link':'http://lethain.com/',
-        'start':'',
-        'end':'',
-        'skills':('Japanese','Teaching',),
+        "title":"Japanese Exchange and Teaching Program",
+        "link":"http://lethain.com/",
+        "start":"",
+        "end":"",
+        "skills":("Japanese","Teaching",),
         },
     {
-        'title':'Centre College',
-        'link':'http://lethain.com/',
-        'start':'',
-        'end':'',
-        'skills':('Java',),
+        "title":"Centre College",
+        "link":"http://lethain.com/",
+        "start":"",
+        "end":"",
+        "skills":("Java",),
         },
     {
-        'title':'Processed Tower Defense',
-        'link':'http://lethain.com/',
-        'start':'',
-        'end':'',
-        'skills':('JavaScript','Processing.js','HTML','CSS'),
+        "title":"Processed Tower Defense",
+        "link":"http://lethain.com/",
+        "start":"",
+        "end":"",
+        "skills":("JavaScript","Processing.js","HTML","CSS"),
         },
 )
 
 """
     {
-        'title':'',
-        'link':'http://',
-        'start':'',
-        'end':'',
+        "title":"",
+        "link":"http://",
+        "start":"",
+        "end":"",
         },
 """
 
@@ -138,6 +139,7 @@ CONTEXT = {
     'country':COUNTRY,
     'statement':STATEMENT,
     'experiences':EXPERIENCES,
+    'exp_json':simplejson.dumps(EXPERIENCES),
     'skills':SKILLS,
 }
 
