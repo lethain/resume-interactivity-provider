@@ -8,8 +8,16 @@ EXPERIENCES = (
         "link":"http://lethain.com/",
         "start":"May, 2007",
         "end":"Present",
-        "skills":("Writing",),
+        "skills":("Django","Python","JavaScript","Cocoa","PyObjC","Cappuccino","Processing.js","Yahoo! BOSS",),
         "description":"Write about Django, Python and programming topics.",
+        },
+    {
+        "title":"Touch Defense",
+        "link":"http://touchdefense.com/",
+        "start":"July, 2008",
+        "end":"Present",
+        "description":"Not yet released project with <a href='http://lukehatcher.com'>Luke Hatcher</a>.",
+        "skills":("Objective-C","Cocoa","iPhone"),
         },
     {
         "title":"AYM CMS",
@@ -27,21 +35,12 @@ EXPERIENCES = (
         "skills":("JavaScript","Processing.js"),
         },
     {
-        "title":"Mahou",
-        "link":"http://lethain.com/entry/2008/sep/12/extending-mahou-gotchas-and-snippets/",
-        "start":"September, 2008",
-        "end":"",
-        "description":"Mashup app using Cappuccino, GAE, and Yahoo! BOSS.",
-        "skills":("Yahoo! BOSS","Cappuccino","Google App Engine","Python"),
-        },
-
-    {
         "title":"LifeFlow",
         "link":"http://lethain.com/",
         "start":"August, 2007",
         "end":"Present",
         "description":"Feature-rich blogging application in Django.",
-        "skills":("Django","Python","HTML","CSS","JavaScript","jQuery","PostgreSQL","Memcached","Git"),
+        "skills":("Django","Python","HTML","CSS","JavaScript","jQuery"),
         },
     {
         "title":"JET Program",
@@ -49,7 +48,7 @@ EXPERIENCES = (
         "start":"August, 2007",
         "end":"August, 2008",
         "description":"Taught English in three public schools in Japan.",
-        "skills":("Japanese","Teaching",),
+        "skills":("Japanese",),
         },
     {
         "title":"Processed Tower Defense",
@@ -57,7 +56,7 @@ EXPERIENCES = (
         "start":"May, 2008",
         "end":"June, 2008",
         "description":"Created tower defense game with <a href='http://blog.rictic.com/'>Peter Burns</a>.",
-        "skills":("JavaScript","Processing.js","HTML","CSS"),
+        "skills":("JavaScript","Processing.js","jQuery","HTML","CSS"),
         },
     {
         "title":"Centre College",
@@ -65,7 +64,7 @@ EXPERIENCES = (
         "start":"August, 1999",
         "end":"May, 2003",
         "description":"B.S. of Computer Science. Member of Phi Beta Kappa.",
-        "skills":("Java",),
+        "skills":("Java","Subversion","Python","Japanese"),
         },
 )
 
@@ -104,8 +103,6 @@ SKILLS = (
     'Mercurial',
     'Subversion',
     'Japanese',
-    'Teaching',
-    'Writing',
 )
 
 # setting up directory paths
