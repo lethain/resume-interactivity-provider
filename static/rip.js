@@ -1,11 +1,11 @@
 $(document).ready(function() {
     var selected;
     var reset_selected_skills = function() {
-      $(".skill").removeClass("selected");
+      $("#skills .selected").animate({fontSize: "1.25em"},500).removeClass("selected");
     }
     var select_skill = function(name) {
       var id = name.replace(/[ .!]+/g,"");
-      $("#"+id).addClass("selected");
+      $("#"+id).animate({fontSize: "1.5em"}, 500).addClass("selected");
     }
     var select_skills_for_experience = function(exp) {
       var title = exp.id.replace(/[ .!]+/g,"");
