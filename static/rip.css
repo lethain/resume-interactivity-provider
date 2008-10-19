@@ -81,6 +81,7 @@ a:hover {
 }
 
 .experience .top {
+    margin-top: 0.25em;
     height: 30px;
     overflow: auto;
 }
@@ -102,7 +103,7 @@ a:hover {
 
 .experience p {
     margin-top: 0;
-    margin-bottom: 0.25em;
+    margin-bottom: 0;
 }
 
 #skills {
